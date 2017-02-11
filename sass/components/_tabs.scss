@@ -6,7 +6,6 @@
     border: 1px solid #eee;
 }
 
-
 .tabs {
     li {
         display: inline-block;
@@ -19,13 +18,13 @@
     background: #ededed;
 }
 
-.tab-content{
+.tab-content {
     display: none;
     background: #ededed;
     padding: 15px;
 }
 
-.tab-content.current{
+.tab-content.current {
     display: inherit;
 }
 

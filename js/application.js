@@ -2,12 +2,11 @@ $(document).ready(function () {
 
 //GAMBURGER MENU
 
-    $('.hamburger').on('click',  (function () {
+    $('.hamburger').on('click', (function () {
         $('.menu').slideToggle('slow', function () {
             $('.hamburger').hide().show();
-            });
+        });
     }));
-
 
 
 //ACCORDION
@@ -20,7 +19,7 @@ $(document).ready(function () {
 
 //MODAL WINDOW
 
-    $('.open-form').on('click',(function (event) {
+    $('.open-form').on('click', (function (event) {
         event.preventDefault();
         $('.overlay').fadeIn(400,
             function () {
@@ -43,17 +42,16 @@ $(document).ready(function () {
 
 // TABS
 
-    $('.tab-link').click(function(){
+    $('.tab-link').click(function () {
         var tab_id = $(this).attr('data-tab');
 
         $('.tab-link').removeClass('current');
         $('.tab-content').removeClass('current');
 
         $(this).addClass('current');
-        $("#"+tab_id).addClass('current');
+        $("#" + tab_id).addClass('current');
     });
 // TOOLTIP
-
 
 
 });

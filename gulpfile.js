@@ -23,7 +23,7 @@ function handleError(err) {
 
 gulp.task('styles', function () {
     return gulp.src('./sass/main.scss')
-        .pipe(plumber({ errorHandler: handleError }))
+        .pipe(plumber({errorHandler: handleError}))
         .pipe(sourcemaps.init())
         .pipe(scss({outputStyle: 'compressed', includePaths: SASS_INCLUDE_PATHS}))
         .pipe(sourcemaps.write())
@@ -31,9 +31,9 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('lib-js', function() {
+gulp.task('lib-js', function () {
     return gulp.src(LIB_JS_INCLUDE_PATHS)
-        .pipe(plumber({ errorHandler: handleError }))
+        .pipe(plumber({errorHandler: handleError}))
         .pipe(sourcemaps.init())
         .pipe(babel({compact: true}))
         .pipe(concat('app.js'))
@@ -41,9 +41,9 @@ gulp.task('lib-js', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./js'));
 });
-gulp.task('js', function() {
+gulp.task('js', function () {
     return gulp.src('./source-js/**/*.js')
-        .pipe(plumber({ errorHandler: handleError }))
+        .pipe(plumber({errorHandler: handleError}))
         .pipe(sourcemaps.init())
         .pipe(babel({compact: true}))
         .pipe(concat('main.js'))
