@@ -1,0 +1,19 @@
+.accordion {
+    color: #dad6f5;
+    .title, .description {
+        padding: 10px;
+        max-width: 470px;
+        background-color: #1d2f5e;
+        border: 2px solid;
+        border-radius: 12px;
+        a {
+            display: block;
+            color: #c1ebf5;
+            font-weight: bold;
+        }
+    }
+    .description {
+        border-top: 0;
+        font-size: 12px;
+        }
+    }

@@ -1,0 +1,52 @@
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000000;
+  margin: 4px;
+}
+
+nav {
+    padding: 10px 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 5px;
+        a {
+            border-radius: 15px;
+            background-color: #1d2f5e;
+            padding: 6px 10px;
+            color: #ffffff;
+            &:hover {
+                color: #ddd6ff;
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        li {
+            display: block;
+            margin: 15px 0;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .menu {
+        display: inline-block !important;
+    }
+    .hamburger {
+        display: none;
+    }
+}
